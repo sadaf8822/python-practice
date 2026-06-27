@@ -80,3 +80,30 @@ text=len('python')
 text_converted= str(float(text))
 print('Text datatype is: ', type(text_converted))
 
+#Even or odd
+num=int(input("Enter a number to check even or odd:"))
+result= num % 2
+print("The number is odd or even: ", result)
+
+#Floor division and casting
+n=7//3
+print("Result of floor division 7//3:", n)
+
+print(type('10')== type(10))
+val=int(9.8)
+print(val == 10)
+#Calculate weekly earnings
+hr=int(input("Enter work hours: "))
+rate_per_hr= int(input("Enter rate per hours: "))
+weekly_earning= hr * rate_per_hr
+print("Your weekly earnings are:", weekly_earning)
+#Calculate number of years in seconds
+yrs=int(input("Enter the number of years you have lived: "))
+yrs_in_sec= yrs * 365.25 * 24 * 60 * 60
+print("Years in seconds is:", yrs_in_sec)
+
+print(1**1, 1**2, 1**3, 1**4, 1**5)
+print(2**1, 2**2, 2**3, 2**4, 2**5)
+print(3**1, 3**2, 3**3, 3**4, 3**5)
+print(4**1, 4**2, 4**3, 4**4, 4**5)
+print(5**1, 5**2, 5**3, 5**4, 5**5)
