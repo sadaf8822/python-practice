@@ -38,3 +38,15 @@ print(formated_string)
 #Python f-strings (formatted string literals)
 print(f'{a} / {b} = {a / b: .2f}') 
 print(f'{a} % {b} = {a  % b}')
+
+#Strings as sequences of characters
+lang='python'
+l,m,n,o,p,q= lang
+print(l)
+print(m)
+print(n)
+print(o)
+print(p)
+print(q)
+initial= lang[0]
+print(initial)
