@@ -52,3 +52,15 @@ print(m>m1)
 print(m<m1)
 print(m==m1)
 
+# Find value of y for equation y=x^2+ 6x+ 9
+# Put different values of x
+x= int(input("Enter the value of x:"))
+y= x**2 + 6*x + 9
+print("Value of y:", y)
+print("When value of x is:", x)
+
+# To find the value of x when y=0
+a,b,c=1,6,9
+disc= (b**2) - (4*a*c)
+x_unknown= (-b + (disc**0.5)) / (2*a)
+print("Value of x:", x_unknown)
