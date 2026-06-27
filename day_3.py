@@ -64,3 +64,19 @@ a,b,c=1,6,9
 disc= (b**2) - (4*a*c)
 x_unknown= (-b + (disc**0.5)) / (2*a)
 print("Value of x:", x_unknown)
+
+# Find and show false msg when comparing words given
+print(len('python') != len('dragon'))
+
+#Comparison operator usage: in, and
+print('on' in 'python' and 'on' in 'dragon')
+
+#Comparison operator usage: in operator
+print("Is usage of word jargon found: ",'I hope this course is not full of jargon' in 'jargon')
+
+print("There is no usage of letters 'on' in python and dragon", 'on' not in 'python' and 'no' not in 'dragon')
+
+text=len('python')
+text_converted= str(float(text))
+print('Text datatype is: ', type(text_converted))
+
