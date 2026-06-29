@@ -81,7 +81,7 @@ print(language.find('y'))
 #rfind= returns the index of the substring that matches the argument
 print(language.rfind('y'))
 #index= returns the lowest index of a substring
-challenge= "thiry two days to go"
+challenge= "thirty two days to go"
 sub_string='da'
 print(challenge.index(sub_string))
 #rindex= returns highest index of a substring
@@ -104,3 +104,16 @@ print(name.isupper())
 web_tech=['html', 'css', 'js', 'reactjs']
 outcome='Web ' .join(web_tech)
 print(outcome)
+
+#strip= removes all given characters from the start/ end of string
+print('Removing "s" and "f" from string 23daysleft:' ,identify.strip('s') )
+#replace=replace substring with a given string
+print(challenge.replace('thirty', 'twenty'))
+#split= splits the string using given string as a separator
+print(challenge.split('thirty'))
+#title returns the title cased string
+print(challenge.title())
+#swapcase= converts all uppercase to lowercase and lowercase to uppercase
+print(multiline_double.swapcase())
+#startswith= checks if string starts with specified string
+print(multiline_double.startswith(" Another"))
