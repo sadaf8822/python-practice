@@ -69,3 +69,38 @@ print(language[::-1])
 skip_character= language[0:6:2]
 print(skip_character)
 
+# String methods
+#Capitalize= Makes initial capital
+print(name.capitalize())
+#Count= counts how many times a substring or a letter came in an argument
+print("Number of times letter i came in:", lname.count('i'))
+#Endswith= checks either the ending letters match the given argument or not
+print("Does the name dominic end with ic letters: ", lname.endswith('ic'))
+#Find= finds a substring, if nothing is found we get -1 as result
+print(language.find('y'))
+#rfind= returns the index of the substring that matches the argument
+print(language.rfind('y'))
+#index= returns the lowest index of a substring
+challenge= "thiry two days to go"
+sub_string='da'
+print(challenge.index(sub_string))
+#rindex= returns highest index of a substring
+print(challenge.rindex(sub_string))
+#isalnum= checks alphanumeric character
+print(lname.isalnum())
+#isalpha= checks if all are alphabets
+print(lname.isalpha())
+#isdecimal= checks if all characters are decimal (0-9)]
+r='10'
+print(r.isdecimal())
+#is identifier= checks if a string is valid variable name
+identify='23daysleft'
+print(identify.isidentifier())
+#islower checks if all alphabets are in lowercase
+print(name.islower())
+#isupper checks if all alphabets are in uppercase
+print(name.isupper())
+#join returns a concatenated string
+web_tech=['html', 'css', 'js', 'reactjs']
+outcome='Web ' .join(web_tech)
+print(outcome)
