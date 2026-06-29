@@ -142,3 +142,23 @@ print("Result with title method: ", company.title())
 print("Result with swapcase method: ", company.swapcase())
 outcome=company[0:6]
 print("Result of slice method:", outcome)
+sub= "Coding"
+print("Result of find method:", company.find(sub))
+print("Result of index method:", company.index(sub))
+print("Result of rfind method:", company.rfind(sub))
+print("Result of rindex method:", company.rindex(sub))
+result=company.replace('Coding', 'Python')
+print("Result of replace method:", company.replace('Coding', 'Python'))
+w="Python for Everyone"
+a1= w[0]
+a2=w[7]
+a3=w[11]
+acro= a1+a2+a3
+print("Acronym of the given phrase Python for everyone:", acro)
+print("Result of replace method:", w.replace('Everyone', 'All'))
+print("Result of split method:", company.split(" "))
+w="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print("Result of split method:", w.split(","))
+print("Character at index 0 of variable company:", company[0])
+print("Character at last index of variable company:", company[-1])
+print("Character at 10 index of variable company:", company[10])
