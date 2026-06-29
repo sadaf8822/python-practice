@@ -50,3 +50,22 @@ print(p)
 print(q)
 initial= lang[0]
 print(initial)
+
+#Slicing String
+#Generic Syntax [start:stop:step]
+#Step means increment
+language= 'Python'
+first_three= language[0:3]
+print(first_three)
+
+#Reversing a string
+#Negative index means we are accessing from right instead of left
+print(language[::-1])
+
+#Skipping characters while slicing
+#Start=0, stop=6 and step=2
+#Begins at iniital and stops at index 5
+#Skips every other item by moving 2 increments
+skip_character= language[0:6:2]
+print(skip_character)
+
