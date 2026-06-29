@@ -117,3 +117,28 @@ print(challenge.title())
 print(multiline_double.swapcase())
 #startswith= checks if string starts with specified string
 print(multiline_double.startswith(" Another"))
+
+#Exercise
+w1= 'Thirty'
+w2= 'Days'
+w3= 'of'
+w4= 'Python'
+ws_combined= w1+ w2+ w3+ w4
+print(ws_combined)
+
+w1='Coding'
+w2='For'
+w3='All'
+ws_combined=w1+w2+w3
+print(ws_combined)
+
+company='Coding for all'
+print(company)
+print("The length of text in variable company: ", len(company))
+print("Result with using uppercase method: ", company.upper())
+print("Result with lowercase method: ", company.lower())
+print("Result with capitalize method: ", company.capitalize())
+print("Result with title method: ", company.title())
+print("Result with swapcase method: ", company.swapcase())
+outcome=company[0:6]
+print("Result of slice method:", outcome)
