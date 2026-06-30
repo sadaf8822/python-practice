@@ -42,3 +42,10 @@ print("Insert Function:",code_lang)
 code_lang.remove("reactjs")
 print("Remove function:", code_lang)
 
+#Remove items into a list (pop function)
+popped_index= code_lang.pop()
+print(f"Result of popped variable {popped_index} \n Remaining list:", code_lang)
+
+#Remove items into a list (del function)
+del code_lang[0]
+print(code_lang)
