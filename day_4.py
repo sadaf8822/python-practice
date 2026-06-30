@@ -162,3 +162,23 @@ print("Result of split method:", w.split(","))
 print("Character at index 0 of variable company:", company[0])
 print("Character at last index of variable company:", company[-1])
 print("Character at 10 index of variable company:", company[10])
+
+a1=company[0]
+a2=company[7]
+a3=company[11]
+acro=a1+a2+a3
+print("Acronym for Coding for all:", acro)
+
+sub="C"
+print("index of character 'C' located in coding for all phrase: ", company.index(sub), "index")
+sub="F"
+#print("Index of character 'F' located in coding for all phrase: ", company.index(sub)) #Gives value error
+sub="I"
+print("Rfind function to see 'I' is located in coding for all phrase:", company.rfind(sub))
+sentence="You cannot end the sentence with because because because is a conjunction"
+print("Find function result 'because'", sentence.find('because'))
+print("Rindex function result 'because'", sentence.rindex('because'))
+conjunction=sentence[33:56]
+print("Slicing operation to slice out phrase 'because because because':", conjunction)
+
+print("Find function (First occurrence) result 'because':", sentence.find('because'))
