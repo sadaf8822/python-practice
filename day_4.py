@@ -182,3 +182,33 @@ conjunction=sentence[33:56]
 print("Slicing operation to slice out phrase 'because because because':", conjunction)
 
 print("Find function (First occurrence) result 'because':", sentence.find('because'))
+print("Startwith function result 'Coding': ", company.startswith('Coding'))
+print("Endswith function result 'Coding':" ,company.endswith('Coding'))
+phrase_with_space= '   Coding For All      '
+print("Result of strip function:", phrase_with_space.strip(' '))
+
+val="30DaysOfPython"
+val1="thirty_days_of_python"
+print("Isidentifier function result '30daysofPython':", val.isidentifier())
+print("Isidentifier function result 'thirty_days_of_Python':", val1.isidentifier())
+
+py_lib= ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+hash_string=' #' .join(py_lib)
+print("Result of join function string and list datatype:", hash_string)
+
+print("Using escape seq: \n I am enjoying this challenge \n I just wonder what is next")
+print("Using escape seq: \n \tName\tAge\tCountry\tCity\n\tAbc\t250\tFinland\tHelsinki")
+
+radius=10
+area=3.14 * radius **2
+print("The area of a circle with radius {} is {:.2f} meters square" .format(radius, area))
+
+num1=8
+num2=6
+print('{} + {} = {}'.format(num1, num2, num1+num2))
+print("{} - {} = {}" .format(num1, num2, num1-num2))
+print("{} * {} = {}" .format(num1, num2, num1*num2))
+print("{} / {} = {}" .format(num1, num2, num1/num2))
+print("{} % {} = {}" .format(num1, num2, num1%num2))
+print("{} // {} = {}" .format(num1, num2, num1//num2))
+print("{} ** {} = {}" .format(num1, num2, num1**num2))
