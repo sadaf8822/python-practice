@@ -82,5 +82,17 @@ print("Result of count method \n How many times did tumeric come in redundant li
 print("Finding index of tumeric:", redundant_list.index("tumeric"))
 
 #Reverse list
-print("Reversing a list using reverse function: ", redundant_list.reverse())
+redundant_list.reverse()
+print("Reversing a list using reverse function: ", redundant_list)
+
+#Sorting list items
+#Method-1: Sort method
+redundant_list.sort()
+print("Result of sort method in ascending:", redundant_list)
+redundant_list.sort(reverse=True)
+print("Result of sort method in descending:", redundant_list)
+
+#Sorted method-does not modify the original string
+print("Result of sorted method in ascending:", sorted(redundant_list))
+print("Result of sorted method in descending:", sorted(redundant_list,reverse=True))
 
