@@ -96,3 +96,26 @@ print("Result of sort method in descending:", redundant_list)
 print("Result of sorted method in ascending:", sorted(redundant_list))
 print("Result of sorted method in descending:", sorted(redundant_list,reverse=True))
 
+#Exercise
+#Level-1
+empty_list=list() #List function, creates empty list
+
+berries=['goose berry', 'strawberry', 'raspberry', 'mulberry', 'blueberries']
+print("Length of berries list:", len(berries))
+
+print("Getting the first element", berries[0])
+middle_element=berries[len(berries)//2]
+print("Getting the middle element:", middle_element)
+last_element=berries[len(berries)-1]
+print("Getting the last element:", last_element)
+
+mixed_data_types=["Erika", 22, "Unmarries", {"address":"123 street block1"}]
+print("Showing a mixed data type list:", mixed_data_types)
+
+companies=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+print('Companies list:', companies)
+print("Number of companies in list:", len(companies))
+middle=companies[len(companies)//2]
+print("First element of list:", companies[0])
+print("Middle element of list:", middle)
+print("Last element of list:", companies[len(companies)-1])
