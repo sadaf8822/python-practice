@@ -72,3 +72,15 @@ print("Joining lists using '+': ", integers)
 negative_integers.extend(zero)
 negative_integers.extend(positive_integers)
 print("Joining lists using extend method: ", negative_integers)
+
+#Counting list items
+redundant_list= ["tumeric", "pepper", "salt", "cajin", "tumeric", "chilli powder", "tumeric"]
+print("Result of count method \n How many times did tumeric come in redundant list: ", redundant_list.count("tumeric"))
+
+#Index method
+#Shows the first occurrence, accesses for left to right
+print("Finding index of tumeric:", redundant_list.index("tumeric"))
+
+#Reverse list
+print("Reversing a list using reverse function: ", redundant_list.reverse())
+
