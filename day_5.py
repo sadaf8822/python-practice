@@ -49,3 +49,26 @@ print(f"Result of popped variable {popped_index} \n Remaining list:", code_lang)
 #Remove items into a list (del function)
 del code_lang[0]
 print(code_lang)
+
+#Clear list items using clear builtin function
+print("Before clearing list: ", code_lang)
+code_lang.clear()
+print("After clearing list: ", code_lang)
+
+#Copying list
+ai_frameworks=['keras, transformers, tensorflow']
+code_lang_copy= ai_frameworks.copy()
+print("Showing results of copy builtin function: ",code_lang_copy)
+
+#Joining Lists
+#Method-1: + operator
+positive_integers=[1,2,3,4,5]
+zero=[0]
+negative_integers=[-5,-4,-3,-2,-1]
+integers= negative_integers+ zero+ positive_integers
+print("Joining lists using '+': ", integers)
+
+#Method-2: extend method (builtin)
+negative_integers.extend(zero)
+negative_integers.extend(positive_integers)
+print("Joining lists using extend method: ", negative_integers)
