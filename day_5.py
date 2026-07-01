@@ -109,7 +109,7 @@ print("Getting the middle element:", middle_element)
 last_element=berries[len(berries)-1]
 print("Getting the last element:", last_element)
 
-mixed_data_types=["Erika", 22, "Unmarries", {"address":"123 street block1"}]
+mixed_data_types=["Erika", 22, "Unmarried", {"address":"123 street block1"}]
 print("Showing a mixed data type list:", mixed_data_types)
 
 companies=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
@@ -119,3 +119,26 @@ middle=companies[len(companies)//2]
 print("First element of list:", companies[0])
 print("Middle element of list:", middle)
 print("Last element of list:", companies[len(companies)-1])
+
+companies[0]='Deepseek'
+print("Displaying modified list:", companies)
+
+it_companies=[]
+it_companies.insert(0, 'Intel')
+print(it_companies)
+
+print("Modified uppercase first element", companies[0].upper())
+it_companies=' #'.join(companies)
+print("Result of join function, joining a string with list:", it_companies)
+
+exist= 'IBM' in companies
+print("Is IBM apart of the list:", exist)
+
+berries.sort()
+print("Sorting the list using sort method", berries)
+
+berries.reverse()
+print("Reversed list", berries)
+
+first_berry, second_berry, third_berry, *rest= berries
+print(first_berry, second_berry, third_berry, rest)
