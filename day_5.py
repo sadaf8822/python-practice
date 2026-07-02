@@ -142,3 +142,74 @@ print("Reversed list", berries)
 
 first_berry, second_berry, third_berry, *rest= berries
 print(first_berry, second_berry, third_berry, rest)
+
+#Accessing last three elements of list
+*_, third_last, second_last, last= berries
+print("Slicing last three elements using * assignment operator: ", third_last, second_last, last)
+
+#Remove first element
+del companies[0]
+print('Removing first element and remaining list is:', companies)
+
+#Removing middle element
+middle= len(companies)//2
+del companies[middle]
+print("Remaining list of companies", companies)
+
+#Removing last element
+last=len(companies)-1
+del companies[last]
+print("Remaining list of companies:", companies)
+
+companies.clear()
+print("Cleared companies list:", companies)
+
+front_end=['HTML', 'CSS', 'JS', 'Reactjs', 'Redux']
+back_end=['Nodejs', 'ExpressJs', 'MongoDB']
+languages= front_end+ back_end
+print(languages)
+
+full_stack= languages.copy()
+full_stack.append('Python')
+full_stack.append('SQL')
+print(full_stack)
+
+ages=[19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print("Sorted ages list:", ages)
+max_age=max(ages)
+min_age=min(ages)
+ages.append(max_age)
+ages.append(min_age)
+print(max_age)
+print("Max and min age added again to the list:", ages)
+
+ages.sort()
+middle= len(ages)//2
+median_age= (ages[middle]-1 + ages[middle])/2
+print("Median age:", median_age)
+
+sum_age_items= sum(ages)
+avg_age= sum_age_items/len(ages)
+print("Sum age:", sum_age_items)
+print("Average age:", avg_age)
+
+range_age= max_age - min_age
+print("Range of ages given within age list:", range_age)
+
+min_avg= abs(min_age - avg_age)
+max_avg= abs(max_age - avg_age)
+print('{}- {} = {}' .format(min_age,avg_age, min_avg))
+print('{}- {} = {}' .format(max_age,avg_age, min_avg))
+
+countries_list=["China", "Japan", "Vietnam", "South Korea", "Mynammar", "Brunei"]
+middle_index= len(countries_list)//2
+countries_list1= countries_list[0:middle_index]
+countries_list2=countries_list[middle_index:]
+print("First sliced list:", countries_list1)
+print("Second sliced list:", countries_list2)
+
+countries=['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+first_country, second_country, third_country, *rest= countries
+Scandic_countries= rest
+print("First country:", first_country, "\n Second Country:", second_country, "\n Third Country: ", third_country, "\n Scandic Countries: ", Scandic_countries)
