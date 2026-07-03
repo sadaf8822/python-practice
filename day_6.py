@@ -61,3 +61,24 @@ vegetables=('Onions', 'Potatoes', 'Tomatoes', 'Garlic', 'Ginger', 'Zucchini')
 animal_products=('Milk', 'Eggs', 'Cheese', 'Leather')
 food_stuff_tp= fruits + vegetables + animal_products
 print(food_stuff_tp)
+
+food_stuff_lt= list(food_stuff_tp)
+print("Datatype of food stuff lt (list) is:", type(food_stuff_lt))
+
+mid= len(food_stuff_tp)//2
+middle_element= food_stuff_tp[mid]
+print("Middle element of tuple food_stuff_tp:", middle_element)
+
+middle= len(food_stuff_lt)//2
+middle_element= food_stuff_lt[middle]
+print("Middle element of list food_stuff_lt: ", middle_element)
+
+first_three= food_stuff_lt[0:3]
+last_three= food_stuff_lt[-3:]
+print(first_three)
+print(last_three)
+
+del food_stuff_tp
+nordic_countries= ('Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden')
+print("Is Estonia present in list of nordic countries: ", 'Estonia' in nordic_countries)
+print("Is Iceland present in list of nordic countries: ", 'Iceland' in nordic_countries)
