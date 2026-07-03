@@ -33,3 +33,31 @@ del color1
 #print("After deletinng colors tuple: ",color1) #Generates name error as tuple is deleted
 
 
+#Exercise-1
+words=()
+print("Showing an empty tuple:", words)
+imaginary_sibling=('Sibling1', 'Sibling2')
+brothers=('Sibling3',)
+sisters=('Sibling4',)
+sibling= imaginary_sibling +brothers+ sisters
+print(sibling)
+print('How many imaginary siblings do you have: ', sibling,len(sibling))
+
+parent=('Mother', 'Father')
+family_members=parent + sibling
+print("Total family members are:", len(family_members))
+
+parent1, parent2, *rest= family_members
+print("Parents:", parent1, parent2)
+print("Siblings:", rest)
+
+siblings= family_members[-4:]
+parents= family_members[0:2]
+print(siblings)
+print(parents)
+
+fruits=('Orange', 'Banana', 'Mango', 'Apple', 'Grape', 'Apricot')
+vegetables=('Onions', 'Potatoes', 'Tomatoes', 'Garlic', 'Ginger', 'Zucchini')
+animal_products=('Milk', 'Eggs', 'Cheese', 'Leather')
+food_stuff_tp= fruits + vegetables + animal_products
+print(food_stuff_tp)
