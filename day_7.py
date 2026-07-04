@@ -78,9 +78,6 @@ print(set1.isdisjoint(set2))
 
 #Exercise
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-age = [22, 19, 24, 25, 26, 24, 25, 24]
 
 print('Length of set it companies: ', len(it_companies))
 it_companies.add("Twitter")
@@ -91,3 +88,20 @@ it_companies.remove("Twitter")
 
 #Difference between remove and discard function is
 #discard function gives no error while the other gives keyerror msg
+
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+
+print("Combining set A and B: ", A.union(B))
+print("Intersection between set A and B: ", A.intersection(B))
+print("Is A set a subset of set B:", A.issubset(B))
+print('Are set A and set B disjoint (no common element): ', A.isdisjoint(B))
+print("Joining set A with set B:", A|B)
+print("Joining set B with set A: ", B|A)
+print("The symmetric difference between set A and set B: ", A.symmetric_difference(B))
+del A 
+del B 
+
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+age_set= set(age)
+print("Datatype of age list:", type(age), "Datatype of age_set:", type(age_set))
