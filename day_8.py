@@ -99,3 +99,13 @@ print(student_dictionary)
 print("Length of student dictionary: ", len(student_dictionary))
 print(student_dictionary.get("skills"))
 print("Datatype of list skills given within dictionary student_dictionary:",type(['skills']))
+
+student_dictionary['skills'].extend(["Typescript", "Vuejs"])
+print(student_dictionary)
+
+print("Keys given in student dictionary: ",student_dictionary.keys())
+print("Values given in student dictionary: ", student_dictionary.values())
+print(student_dictionary.items())
+pop_item= student_dictionary.popitem()
+print("Last item in student dictionary:", pop_item)
+del car
