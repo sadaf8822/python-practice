@@ -77,3 +77,25 @@ print(values)
 #Using get method-- get method gets the values of the key given as argument
 val= water_bodies.get("Amazon_River")
 print("Amazon river is located in continent: ",val)
+
+#Exercise
+dog= dict()
+dog.update({"name": "Tuxedo", "Color": "Black and white", "Breed": "Labrador", "Legs": 4, "Age": 2})
+print(dog)
+
+student_dictionary= {
+    "First_name":"Sarah",
+    "last_name":"Hisham",
+    "gender":"Female",
+    "Age": 45,
+    "Marital_Status": "Married",
+    "skills":['HTML', 'AI', 'CSS', 'Reactjs'],
+    "address":{
+        "country": "Phillipines",
+        'city': "Manila"
+    }
+}
+print(student_dictionary)
+print("Length of student dictionary: ", len(student_dictionary))
+print(student_dictionary.get("skills"))
+print("Datatype of list skills given within dictionary student_dictionary:",type(['skills']))
