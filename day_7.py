@@ -105,3 +105,17 @@ del B
 age = [22, 19, 24, 25, 26, 24, 25, 24]
 age_set= set(age)
 print("Datatype of age list:", type(age), "Datatype of age_set:", type(age_set))
+length_age_set=len(age_set)
+length_age_lt=len(age)
+print("The length of age_set: ", length_age_set, "\nThe length of age_lt:", length_age_lt, "\nMaximum length is:", max(length_age_lt, length_age_set))
+
+#Only list is mutable
+#Set is mutable while its elements are immutable
+#Only set is unordered and takes unique values, no duplicate values
+#No slicing (indexing) is allowed in sets, while in list, tuple, string and set
+#String is a set of characters.
+
+sentence="I am a teacher and I love to inspire and teach people. "
+words= sentence.replace(".", " ").split()
+unique_words= set(words)
+print(unique_words)
