@@ -94,3 +94,50 @@ elif month in summer:
 else:
     print("Invalid entry")
 
+num1=int(input("Enter a number:"))
+num2=int(input("Enter another number:"))
+if num1> num2:
+    print("{} is greater than {}".format(num1,num2))
+elif num2> num1:
+    print("{} is greater than {}".format(num2,num1))
+else:
+    print("{} is equal to {}".format(num1, num2))
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+user_input=str(input("Enter your favorite fruit:"))
+
+if user_input not in fruits:
+    fruits.append(user_input)
+    print("Modified list of fruits:", fruits)
+else:
+    print("This fruit exists")
+
+person={
+    'first_name': 'John',
+    'last_name': 'Doe',
+    'age': 50,
+    'country': 'Ireland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
+person_skillset=person['skills']
+if person['skills']== person_skillset:
+    print("It exists!!")
+    mid= len(person)//2
+    mid_skill= person_skillset[mid]
+    print("The middle skillset is:", mid_skill)
+
+if 'Python' in person['skills']:
+    print("The person has Python skills")
+if 'Javascript' in person['skills'] or 'React' in person['skills']:
+     print("This is a frontend developer")
+if 'Node' in person['skills'] and 'Python' in person['skills'] and 'MongoDB' in person['skills']:
+    print("This is a backend developer")
+if 'React'in person['skills'] and 'Node'in person['skills'] and 'MongoDB' in person['skills']:
+    print("This is a fullstack developer")
+if person['is_married'] is True and person['country']== 'Ireland':
+    print(f"{person['first_name']} {person['last_name']} lives in {person['country']}. He is married")
