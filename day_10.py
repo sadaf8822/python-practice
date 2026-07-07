@@ -61,3 +61,32 @@ for num in even_num:
     if num==3:
         break
 
+#range(start, end, step)
+lst=list(range(11)) #Here by default start=0, increment=1, where end=11
+print(lst) #It will display 0-10 elements, making 11 elements
+
+st=set(range(1,11)) #Here we gave the starting point=1, ending=11
+print(lst)
+
+lst=list(range(0,11,2)) #Start=0, end=11, skip/step=2
+print(lst)
+st=set(range(0,11,2))
+print(st)
+
+lst=list(range(11,0,-2)) #Here we have given for backward, start=11, end=0, skip=-2
+print(lst)
+
+#Nested loop
+for key in person:
+    if key == 'skills':
+        for skill in person['skills']:
+            print(skill)
+
+# For else
+for number in range(11):
+    print(number)
+else:
+    print("The loop stops at:", number)
+
+for number in range(6):
+    pass
