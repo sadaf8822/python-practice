@@ -89,4 +89,32 @@ else:
     print("The loop stops at:", number)
 
 for number in range(6):
-    pass
+    pass 
+
+counter=0
+while counter<11:
+    print("Iterating from 0 to 10:", counter)
+    counter+=1
+
+negative_counter= 10
+while negative_counter>0 or negative_counter==10:
+    print("Going backward using while loop:", negative_counter)
+    negative_counter-=1
+
+#for i in range(1, 8):
+    #print("#" * i)
+
+for i in range(8): #Row
+    for j in range(8): #Column
+        print(" # ", end="")
+    print()    
+
+for i in range(11):
+    print("{} x {}= {}" .format(i, i, i*i))
+
+py_lt=["Python", "Numpy", "Pandas", "Django","Flask"]
+for element in py_lt:
+    print("Elements of py_lt:", element)
+
+for number in range(0, 101,2):
+    print("Even number:", number)
