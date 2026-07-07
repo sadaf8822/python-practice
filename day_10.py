@@ -118,3 +118,27 @@ for element in py_lt:
 
 for number in range(0, 101,2):
     print("Even number:", number)
+
+for number in range(1,101, 2):
+    print("Odd number:", number)
+
+total_sum=0
+for i in range(1,101):
+    total_sum += i
+print("The total sum from 0 to 100:", total_sum)
+
+total_even_sum=0
+for number in range(0, 101,2):
+    print("Even number:", number)
+    total_even_sum += number
+print("Total even number sum:", total_even_sum)
+
+total_odd_sum=0
+for number in range(101):
+    if number % 2 != 0:
+        total_odd_sum += number
+print("Total odd number sum:", total_odd_sum)
+
+fruit_lt=['banana', 'orange', 'mango', 'lemon']
+for elements in reversed(fruit_lt):
+    print(elements)
