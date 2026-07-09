@@ -52,3 +52,30 @@ def greetings(name= 'Peter'):
 print(greetings()) #Here using default parameter
 print(greetings('Asif')) #If another value is not given, default value is used
 
+#Taking arbitrary number of arguments
+def sum_all_nums(*nums):
+    total=0
+    for num in nums:
+        total +=num
+    return total
+print(sum_all_nums(2,3,4))
+
+#Default and arbitrary number of parameters
+def generate_groups(team='player1', *args):
+    print(team)
+    for i in args:
+        print(i)
+generate_groups('Asad', 'Ali', 'Amir')
+
+# Dictionary Unpacking
+def greet(name, location):
+    print("Hi", name, "how is the weather in", location)
+dictionary= {"name": 'Alice', "location": "Wonderland"}
+greet(**dictionary)
+
+#Function as a parameter of another function
+def sq_num (n):
+    return n**n
+def do_something(f,x):
+    return f(x)
+print(do_something(sq_num, 3))
