@@ -79,3 +79,102 @@ def sq_num (n):
 def do_something(f,x):
     return f(x)
 print(do_something(sq_num, 3))
+
+#Exercise-1
+def add_two_nums(num1, num2):
+    sum_two_nums= num1+num2
+    return sum_two_nums
+a= int(input("Enter a number:"))
+b= int(input("Enter another number:"))
+print("Sum of numbers entered is: ", add_two_nums(a,b))
+
+def area_of_circle(r):
+    pie= 3.14
+    area_of_circle= pie* r * r
+    return area_of_circle
+radius=float(input("Enter your radius:"))
+print("Area of circle: ", area_of_circle(radius))
+
+def add_all_nums(*nums):
+    total= 0
+    for i in nums:
+        total+=i
+    return total
+numbers= input("Enter some numbers but give space:")
+nums_list= [int(n) for n in numbers.split()]
+print("Total sum of numbers entered: ", add_all_nums(*nums_list))
+
+def convert_celsius_to_fahrenheit(temp):
+    f= temp * 1.8 +32
+    return f
+celsuis= float(input("Enter celsuis:"))
+print("Fahrenheit Temperature:", convert_celsius_to_fahrenheit(celsuis))
+
+def check_season(month):
+    autumn= ['September','september' ,'October','october' ,'November', 'november']
+    winter=['December','February','January','december','february','january']
+    spring=['March', 'April', 'May', 'march', 'april', 'may']
+    summer=['June', 'July', 'August','june', 'july', 'august']
+    if month in autumn:
+        print("The month {} is in autumn." .format(month))
+    elif month in winter:
+        print("The month {} is in winter." .format(month))
+    elif month in spring:
+        print("The month {} is in spring." .format(month))
+    elif month in summer:
+        print("The month {} is in summer" .format(month))
+    else:
+        print("Invalid entry")
+
+month=str(input("Enter a month:"))
+check_season(month)
+
+def calculate_slope(m, b):
+    print("y= {}x + {}" .format(m,b))
+m=int(input("Enter the value of m: "))
+b= int(input("Enter the value of b: "))
+calculate_slope(m,b)
+
+def solve_quadratic_eqn(a, b, c):
+    if a == 0:
+        return "a cannot be zero"
+        
+    disc = b**2 - 4*a*c 
+    
+    if disc > 0:
+        # Use / for true division instead of // (floor division)
+        root1 = (-b + (disc**0.5)) / (2*a)
+        root2 = (-b - (disc**0.5)) / (2*a)
+        return root1, root2
+    elif disc == 0:
+        root = -b / (2*a)
+        return root
+    else:
+        real_part = -b / (2*a)
+        imaginary_part = (abs(disc)**0.5) / (2*a)
+        root1 = complex(real_part, imaginary_part)
+        root2 = complex(real_part, -imaginary_part)
+        return root1, root2
+a= int(input("Enter a value for a: "))
+b= int(input("Enter a value for b: "))
+c= int(input("Enter a value for c: "))
+print("Real distinct:", solve_quadratic_eqn(a,b,c))
+
+# Case 2: One repeated root (x^2 - 4x + 4 = 0) -> Expected: (2.0,)
+print("Repeated root:", solve_quadratic_eqn(a,b,c))
+
+# Case 3: Complex roots (1x^2 + 1x + 1 = 0) -> Expected: (-0.5+0.866j, -0.5-0.866j)
+print("Complex roots:", solve_quadratic_eqn(a,b,c))
+
+num_list=int(input("Enter the length of list: "))
+mango_list= []
+for index in range(num_list):
+    item= input(f"Enter element for index {index+1}:")
+    mango_list.append(item)
+
+def print_list(lst):
+    for item in lst:
+        print(item)
+
+print_list(mango_list)
+
